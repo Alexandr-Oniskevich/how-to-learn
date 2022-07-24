@@ -35,7 +35,7 @@
 }
 
 .logo:hover {
-  border-bottom: 1px solid #2f80ed;
+  border-bottom: 2px solid #2f80ed;
 }
 
 .header__title {
@@ -72,7 +72,7 @@
 }
 
 .header__link:hover {
-  border: 1px solid #2f80ed;
+ border-bottom: 2px solid #2f80ed;
 }
 
 .header__main-illustration {
@@ -247,7 +247,7 @@
 }
 
 .feynman__link:hover {
-  border: 1px solid #2f80ed;
+  border-bottom: 2px solid #2f80ed;
 }
 
 .kaufman {
@@ -304,6 +304,7 @@
 }
 
 .footer__columns {
+  box-sizing: border-box;
   padding: 60px 0 40px 0;
   display: flex;
   justify-content: space-between;
