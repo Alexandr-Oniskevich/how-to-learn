@@ -7,9 +7,6 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
-}
-
-* {
   box-sizing: border-box;
 }
 
@@ -25,7 +22,6 @@
 }
 
 .logo {
-
   width: 228px;
   height: 32px;
 }
@@ -34,7 +30,12 @@
   top: 30px;
   left: 64px;
   background-image: url('../images/logo_place_header.svg');
+  background-repeat: no-repeat;
   position: absolute;
+}
+
+.logo:hover {
+  border-bottom: 1px solid #2f80ed;
 }
 
 .header__title {
@@ -68,6 +69,10 @@
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
+}
+
+.header__link:hover {
+  border: 1px solid #2f80ed;
 }
 
 .header__main-illustration {
@@ -169,16 +174,14 @@
   margin: 0 auto;
   padding: 0;
   width: 1100px;
-  margin-top: 60px;
-
 }
-
 
 .table__cell {
   margin: 0;
   padding: 0;
   width: 250px;
   list-style: none;
+  margin-top: 60px;
 }
 
 
@@ -199,11 +202,10 @@
   font-weight: normal;
 }
 
-
 .feynman {
   margin: 0;
   padding: 0;
-  height: 890px;
+  min-height: 890px;
   background-image: url('../images/feynman.png');
   background-repeat: no-repeat;
   background-color: #f2f2f2;
@@ -231,7 +233,6 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-
 }
 
 .feynman__link {
@@ -245,34 +246,35 @@
   font-weight: normal;
 }
 
+.feynman__link:hover {
+  border: 1px solid #2f80ed;
+}
+
 .kaufman {
   background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .kaufman__triangle {
   margin: 0;
   padding: 0;
-  max-width: 877px;
-  height: 877px;
-  background-image: url('../images/kaufman-triangle.svg');
+  min-width: 877px;
+  min-height: 877px;
+  background-image: url("../images/kaufman-triangle.svg");
   background-repeat: no-repeat;
   top: 0px;
-  right: -180px;
+  right: -210px;
   position: absolute;
-  background-size: auto;
-  z-index: 0;
+  background-size: contain;
+  z-index: -1;
   overflow: hidden;
 }
-
 
 .table_theme_dark {
   position: relative;
   padding-bottom: 90px;
-  z-index: 1;
-  margin-top: 80px;
-
 }
 
 .section-title_theme_dark {
@@ -354,7 +356,10 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+}
 
+.footer__column-link:hover {
+ color: #2f80ed;
 }
 
 .footer__social-icon {
